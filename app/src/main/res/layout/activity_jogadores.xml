@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".view.JogadoresActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/id_jogador"
+        android:id="@+id/editId"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Nome"
+        android:id="@+id/editNome"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/DataNascimento"
+        android:id="@+id/editDataNascimento"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Posição"
+        android:id="@+id/editPosicao"
+        />
+
+    <EditText
+        android:id="@+id/editCpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cpf" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pesquisar"
+        android:onClick="pesquisar"
+        />
+</LinearLayout>

@@ -1,0 +1,2 @@
+rootProject.name='Alti Sports'
+include ':app'

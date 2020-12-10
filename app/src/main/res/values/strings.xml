@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Alti Sports</string>
+    <string name="meu_carrinho">Meu Carrinho</string>
+    <string name="adicionar_produto">Adicionar Produto</string>
+    <string name="limpar_lista">Limpar Lista</string>
+    <string name="total">Total:</string>
+    <string name="adicionando_produto">Adicionando Produto</string>
+    <string name="produto">Produto</string>
+    <string name="quantidade">Quantidade</string>
+    <string name="enviar">Adicionar</string>
+    <string name="nome_do_produto">Nome do Produto</string>
+    <string name="preco_do_produto">Preço do Produto</string>
+    <string name="salvar">Salvar</string>
+    <string name="gerenciar_produtos">Gerenciar Produtos</string>
+    <string name="nome_produto_obrigatorio">Nome do produto é obrigatório</string>
+    <string name="preco_produto_obrigatorio">Preço do produto é obrigatório</string>
+    <string name="produto_adicionado_sucesso">Produto adicionado com sucesso!</string>
+    <string name="comanda_item_adicionado_sucesso">Item do carrinho adicionado com sucesso</string>
+    <string name="comanda_item_excluido_sucesso">Item do carrinho excluido com sucesso</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="menosUm" translatable="false">-1</string>
+    <string name="editar_quantidade_do_item">Editar quantidade do item</string>
+    <string name="maisUm" translatable="false">+1</string>
+    <string name="excluindo_item_da_comanda">Excluindo item do carrinho</string>
+    <string name="deseja_realmente_excluir_item">Deseja realmente excluir o item</string>
+    <string name="da_comanda">" do carrinho ?"</string>
+    <string name="nao">Não</string>
+    <string name="sim">Sim</string>
+    <string name="somado_mais_um_a_quantidade_do_item_selecionado">Somado +1 a quantidade do item selecionado</string>
+    <string name="subtraido_menos_um_a_quantidade_do_item_selecionado">Subtraido -1 a quantidade do item selecionado</string>
+    <string name="preco_produto_margem_permitida">O Preço do Produto deve estar entre 0 e 9999</string>
+    <string name="cadastrado_com_sucesso">Cadastrado com sucesso</string>
+    <string name="tente_novamente_em_breve">Tente novamente em breve</string>
+    <string name="id_" translatable="false">Id:</string>
+    <string name="sucesso">Sucesso</string>
+    <string name="tente_mais_tarde">Tente mais tarde</string>
+    <string name="fechar">Fechar</string>
+    <string name="editar">Editar</string>
+    <string name="excluindo_produto">Excluindo Produto</string>
+    <string name="deseja_realmente_excluir_o_produto">Deseja realmente excluir o produto</string>
+    <string name="pesquisa_jogadores">pesquisa_jogadores</string>
+    <string name="pesquisar_jogadores">Jogadores</string>
+    <string name="id_jogador">Id Jogador</string>
+    <string name="Nome">Nome</string>
+    <string name="DataNascimento">DataNascimento</string>
+</resources>
