@@ -52,20 +52,20 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="120dp"
+        android:layout_width="382dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="left">
+        android:layout_gravity="left"
+        android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnJogadores"
-            android:layout_width="0dp"
+            android:id="@+id/buscarCep"
+            android:layout_width="54dp"
             android:layout_height="40dp"
-            android:layout_margin="16dp"
+            android:layout_margin="15dp"
             android:layout_marginTop="16dp"
             android:layout_weight="1"
             android:background="#FF5722"
-            android:text="@string/pesquisar_jogadores"
+            android:text="@string/buscarCep"
             android:textColor="#FFFFFF" />
     </LinearLayout>
 

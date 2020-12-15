@@ -1,12 +1,12 @@
-package br.com.altisportss.dao;
+package br.com.altisportss.model.dao;
 
 import android.content.Context;
 
 import java.sql.SQLException;
 import java.util.List;
 
-import br.com.altisportss.dao.helpers.DaoHelper;
-import br.com.altisportss.model.Produto;
+import br.com.altisportss.model.dao.helpers.DaoHelper;
+import br.com.altisportss.model.vo.Produto;
 
 public class ProdutoDao extends DaoHelper<Produto> {
 

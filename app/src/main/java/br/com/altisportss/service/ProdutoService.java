@@ -3,7 +3,7 @@ package br.com.altisportss.service;
 import java.util.Arrays;
 import java.util.List;
 
-import br.com.altisportss.model.Produto;
+import br.com.altisportss.model.vo.Produto;
 
 public class ProdutoService {
 

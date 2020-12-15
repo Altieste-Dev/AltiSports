@@ -13,16 +13,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.altisportss.R;
-import br.com.altisportss.dao.CarrinhoDao;
-import br.com.altisportss.dao.CarrinhoItemDao;
-import br.com.altisportss.model.Carrinho;
-import br.com.altisportss.model.CarrinhoItem;
+import br.com.altisportss.model.dao.CarrinhoDao;
+import br.com.altisportss.model.dao.CarrinhoItemDao;
+import br.com.altisportss.model.vo.Carrinho;
+import br.com.altisportss.model.vo.CarrinhoItem;
 import br.com.altisportss.service.CarrinhoItemService;
 import br.com.altisportss.service.CarrinhoService;
 import br.com.altisportss.util.UtilNumberFormat;
+import br.com.altisportss.viaCep.CepActivity;
 import br.com.altisportss.view.CarrinhoItemActivity;
-import br.com.altisportss.view.JogadoresActivity;
+// import br.com.altisportss.view.JogadoresActivity;
 import br.com.altisportss.view.MainActivity;
+import br.com.altisportss.view.JogadoresActivity;
 import br.com.altisportss.view.ProdutoActivity;
 
 public class MainController {
@@ -107,7 +109,7 @@ public class MainController {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 carrinhoItem = adapterCarrinhoItems.getItem(position);
-                editarComandaItemDialog(carrinhoItem);
+                editarCarrinhoItemDialog(carrinhoItem);
             }
         });
 
@@ -141,7 +143,7 @@ public class MainController {
         alerta.show();
     }
 
-    public void editarComandaItemDialog(final CarrinhoItem item) {
+    public void editarCarrinhoItemDialog(final CarrinhoItem item) {
         AlertDialog.Builder alerta = new AlertDialog.Builder(activity);
         alerta.setTitle(activity.getString(R.string.editar_quantidade_do_item) + item.getProduto().getNome());
         alerta.setIcon(android.R.drawable.ic_menu_edit);
@@ -149,7 +151,7 @@ public class MainController {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 adicionarMaisUmaQuantidade(item);
-                atualizarEPersistirValoresDaComanda();
+                atualizarEPersistirValoresDoCarrinho();
                 Toast.makeText(activity, R.string.somado_mais_um_a_quantidade_do_item_selecionado, Toast.LENGTH_SHORT).show();
             }
         });
@@ -157,7 +159,7 @@ public class MainController {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 subtrairMenosUmaQuantidade(item);
-                atualizarEPersistirValoresDaComanda();
+                atualizarEPersistirValoresDoCarrinho();
                 Toast.makeText(activity, R.string.subtraido_menos_um_a_quantidade_do_item_selecionado, Toast.LENGTH_SHORT).show();
 
             }
@@ -187,7 +189,7 @@ public class MainController {
 
     }
 
-    public void atualizarEPersistirValoresDaComanda() {
+    public void atualizarEPersistirValoresDoCarrinho() {
         try {
             carrinho = carrinhoService.recalcularTotal(carrinho);
             carrinhoDao.getDao().update(carrinho);
@@ -226,7 +228,7 @@ public class MainController {
                 e.printStackTrace();
             }
         }
-        atualizarEPersistirValoresDaComanda();
+        atualizarEPersistirValoresDoCarrinho();
     }
 
     public void atualizarItemsDoCarrinho() {
@@ -260,6 +262,11 @@ public class MainController {
 
     public void redirecionarParaJogadores() {
         Intent intent = new Intent(activity, JogadoresActivity.class);
+        activity.startActivity(intent);
+    }
+
+    public void redirecionarParaCep() {
+        Intent intent = new Intent(activity, CepActivity.class);
         activity.startActivity(intent);
     }
 }

@@ -1,9 +1,9 @@
-package br.com.altisportss.dao;
+package br.com.altisportss.model.dao;
 
 import android.content.Context;
 
-import br.com.altisportss.dao.helpers.DaoHelper;
-import br.com.altisportss.model.Carrinho;
+import br.com.altisportss.model.dao.helpers.DaoHelper;
+import br.com.altisportss.model.vo.Carrinho;
 
 public class CarrinhoDao extends DaoHelper<Carrinho> {
 

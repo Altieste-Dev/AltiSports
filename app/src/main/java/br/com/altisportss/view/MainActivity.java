@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnLimparLista;
     private TextView tvTotal;
     private ListView lvCarrinhoItems;
-    private Button btnJogadores;
+    private Button btnCep;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         btnLimparLista = findViewById(R.id.btnLimparLista);
         tvTotal = findViewById(R.id.tvTotal);
         lvCarrinhoItems = findViewById(R.id.lvCarrinhoItems);
-        btnJogadores = findViewById(R.id.btnJogadores);
+        btnCep = findViewById(R.id.buscarCep);
     }
 
     private void initializeClickListeners(){
@@ -62,10 +62,10 @@ public class MainActivity extends AppCompatActivity {
                 mainController.redirecionarParaContextoDeGerenciarProdutos();
             }
         });
-        btnJogadores.setOnClickListener(new View.OnClickListener() {
+        btnCep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mainController.redirecionarParaJogadores();
+                mainController.redirecionarParaCep();
             }
         });
     }

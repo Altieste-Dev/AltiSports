@@ -1,9 +1,9 @@
 package br.com.altisportss.service;
 
-import br.com.altisportss.dao.CarrinhoItemDao;
-import br.com.altisportss.model.Carrinho;
-import br.com.altisportss.model.CarrinhoItem;
-import br.com.altisportss.model.Produto;
+import br.com.altisportss.model.dao.CarrinhoItemDao;
+import br.com.altisportss.model.vo.Carrinho;
+import br.com.altisportss.model.vo.CarrinhoItem;
+import br.com.altisportss.model.vo.Produto;
 
 public class CarrinhoItemService {
 

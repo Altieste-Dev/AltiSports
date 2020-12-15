@@ -1,4 +1,4 @@
-package br.com.altisportss.model;
+package br.com.altisportss.model.vo;
 
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;

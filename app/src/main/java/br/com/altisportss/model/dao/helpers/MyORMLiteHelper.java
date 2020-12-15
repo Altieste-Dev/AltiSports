@@ -1,4 +1,4 @@
-package br.com.altisportss.dao.helpers;
+package br.com.altisportss.model.dao.helpers;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -9,9 +9,9 @@ import com.j256.ormlite.table.TableUtils;
 
 import java.sql.SQLException;
 
-import br.com.altisportss.model.Carrinho;
-import br.com.altisportss.model.CarrinhoItem;
-import br.com.altisportss.model.Produto;
+import br.com.altisportss.model.vo.Carrinho;
+import br.com.altisportss.model.vo.CarrinhoItem;
+import br.com.altisportss.model.vo.Produto;
 
 public class MyORMLiteHelper extends OrmLiteSqliteOpenHelper {
 

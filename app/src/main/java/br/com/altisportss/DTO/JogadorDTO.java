@@ -2,12 +2,11 @@ package br.com.altisportss.DTO;
 
 import java.io.Serializable;
 
-import br.com.altisportss.model.Jogador;
-import br.com.altisportss.model.bo.Posicao;
+import br.com.altisportss.model.vo.Jogador;
 
 public class JogadorDTO implements Serializable {
 
-    private int id;
+    private String id;
     private String Nome;
     private String DataNascimento;
     private String Posicao;
@@ -16,7 +15,7 @@ public class JogadorDTO implements Serializable {
     public JogadorDTO() {
     }
 
-    public JogadorDTO( int id, String nome, String dataNascimento, String posicao, String cpf) {
+    public JogadorDTO( int String, String nome, String dataNascimento, String posicao, String cpf) {
         id = id;
         Nome = nome;
         DataNascimento = dataNascimento;
@@ -24,11 +23,11 @@ public class JogadorDTO implements Serializable {
         Cpf = cpf;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

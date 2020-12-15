@@ -1,4 +1,4 @@
-package br.com.altisportss.dao.helpers;
+package br.com.altisportss.model.dao.helpers;
 
 import android.content.Context;
 

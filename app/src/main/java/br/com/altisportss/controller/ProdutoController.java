@@ -12,8 +12,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.altisportss.R;
-import br.com.altisportss.dao.ProdutoDao;
-import br.com.altisportss.model.Produto;
+import br.com.altisportss.model.dao.ProdutoDao;
+import br.com.altisportss.model.vo.Produto;
 import br.com.altisportss.model.bo.ProdutoBO;
 import br.com.altisportss.service.ProdutoService;
 import br.com.altisportss.view.ProdutoActivity;

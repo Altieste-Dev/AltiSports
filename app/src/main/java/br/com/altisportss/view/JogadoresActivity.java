@@ -11,7 +11,7 @@ import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import br.com.altisportss.DTO.JogadorDTO;
 import br.com.altisportss.R;
-import br.com.altisportss.model.Jogador;
+import br.com.altisportss.model.vo.Jogador;
 import cz.msebera.android.httpclient.Header;
 
 
@@ -41,7 +41,7 @@ public class JogadoresActivity extends AppCompatActivity {
         String id = editId.getText().toString();
 
         AsyncHttpClient client = new AsyncHttpClient();
-        client.get("http:192.168.15.42/ler.php?id=" + id , new AsyncHttpResponseHandler() {
+        client.get("http://192.168.15.42:80/ler.php?id=" + id, new AsyncHttpResponseHandler() {
             @Override
             public void onStart() {
                 super.onStart();

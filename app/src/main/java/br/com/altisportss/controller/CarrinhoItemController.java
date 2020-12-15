@@ -6,9 +6,9 @@ import android.widget.Toast;
 import java.sql.SQLException;
 
 import br.com.altisportss.R;
-import br.com.altisportss.dao.CarrinhoDao;
-import br.com.altisportss.dao.ProdutoDao;
-import br.com.altisportss.model.Produto;
+import br.com.altisportss.model.dao.CarrinhoDao;
+import br.com.altisportss.model.dao.ProdutoDao;
+import br.com.altisportss.model.vo.Produto;
 import br.com.altisportss.service.CarrinhoService;
 import br.com.altisportss.view.CarrinhoItemActivity;
 
